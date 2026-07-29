@@ -6,6 +6,8 @@
 <title>Pilateria — Reformer &amp; Mat Pilates Stüdyosu</title>
 <meta name="description" content="Pilateria Pilates Stüdyosu: en fazla 4 kişilik gruplarla reformer, bireysel ve duo dersler, hamile pilatesi. Randevu için WhatsApp'tan yazın.">
 <meta name="theme-color" content="#FBF5E7">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-v6GhtUTYQOqQj9BEMAcABPxF/1zFuX+Re6+nW+5tjR0='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; form-action 'none'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="pilateria-figure.png">
 
 <meta property="og:title" content="Pilateria — Pilates Stüdyosu">
@@ -427,12 +429,14 @@ footer a:hover{color:var(--tarcin)}
 /* ==========================================================
    BURAYI DOLDURUN — sitedeki tüm iletişim bilgisi tek yerde.
    ========================================================== */
+if (self !== top) { top.location = self.location; }
+
 const PILATERIA = {
   whatsapp: "905318960521",          // ülke koduyla, + ve boşluk olmadan
   telefon:  "0531 896 05 21",        // ekranda görünecek hâli
-  adres:    "Mebus Evleri Mahallesi, Ergin Sokak No: 24/4, Şenel İş Merkezi · Çankaya / Ankara",
-  haritaSrc: "https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s39.9308,32.833998!6i17!3m1!1str!5m1!1str",
-  haritaYol: "https://maps.app.goo.gl/tLuGVDbL5wSuUsk46",  // "Yol tarifi" bağlantısı
+  adres:    "Şenel İş Merkezi, Mebusevleri, Ergin Sok. No: 24/4, 06570 Çankaya / Ankara",
+  haritaSrc: "https://www.google.com/maps?q=Pilateria%20Pilates%20Studio%2C%20Ergin%20Sk.%20No%3A24/4%2C%20Mebusevleri%2C%2006570%20%C3%87ankaya/Ankara&hl=tr&z=17&output=embed",
+  haritaYol: "https://maps.app.goo.gl/SzZtNyruSSmPSSX8A",  // "Yol tarifi" bağlantısı
   saatler: [
     "Pazartesi – Cumartesi · 10:00 – 21:00",
     "Pazar · kapalı"

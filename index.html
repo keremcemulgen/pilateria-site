@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pilateria Pilates Studio — Ankara Çankaya</title>
-<meta name="description" content="Pilateria Pilates Stüdyosu: en fazla 4 kişilik gruplarla reformer, bireysel ve duo dersler, hamile pilatesi. Randevu için WhatsApp'tan yazın.">
+<meta name="description" content="Pilateria Pilates Stüdyosu: en fazla 4 kişilik gruplarla reformer, bireysel ve duet dersler, hamile pilatesi. Randevu için WhatsApp'tan yazın.">
 <meta name="theme-color" content="#FBF5E7">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-v6GhtUTYQOqQj9BEMAcABPxF/1zFuX+Re6+nW+5tjR0='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; form-action 'none'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
@@ -207,6 +207,44 @@ section{padding-block:var(--bolum-y);position:relative}
 .harita{width:100%;aspect-ratio:4/3;border:0;border-radius:18px}
 .iletisim .btn{margin-top:32px}
 
+/* ---------- nasil baslarim ---------- */
+.nasil{background:var(--krem)}
+.adimlar{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-top:8px}
+.adim{background:#FFFDF7;border:1px solid rgba(90,112,80,.14);border-radius:20px;padding:26px 24px}
+.adim .no{width:44px;height:44px;border-radius:50%;background:var(--kayisi);color:#33291F;
+  font-family:var(--display);font-size:1.5rem;font-weight:500;display:grid;place-items:center;margin-bottom:14px}
+.adim h3{margin-bottom:8px}
+.adim p{color:#54604F;font-size:.95rem}
+.adim-buton{margin-top:28px}
+
+/* ---------- kimler icin + reformer ---------- */
+.kimler{background:var(--kum)}
+.kimler-izgara{display:grid;grid-template-columns:1.25fr .85fr;gap:48px;align-items:start}
+.kim-liste{display:grid;gap:14px;margin-top:8px}
+.kim{background:#FFFDF7;border-left:3px solid var(--adacayi);border-radius:0 14px 14px 0;
+  padding:16px 18px;color:#54604F;font-size:.96rem}
+.kim strong{color:var(--zeytin)}
+.reformer-kutu{background:var(--zeytin);color:#EFEADF;border-radius:22px;padding:30px 28px;
+  position:sticky;top:96px}
+.reformer-kutu .etiket{color:var(--kayisi)}
+.reformer-kutu h3{color:#FFF6EC;margin-bottom:12px;font-size:1.5rem}
+.reformer-kutu p{color:#D8D3C6;font-size:.94rem}
+.reformer-kutu p+p{margin-top:12px}
+
+/* ---------- sss ---------- */
+.sss{background:var(--krem)}
+.sss-liste{display:grid;gap:12px;max-width:820px}
+.sss details{background:#FFFDF7;border:1px solid rgba(90,112,80,.14);border-radius:16px;
+  padding:0 22px;transition:border-color .2s}
+.sss details[open]{border-color:var(--kayisi)}
+.sss summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;
+  gap:14px;padding:18px 0;font-weight:600;color:var(--zeytin);font-size:1.02rem}
+.sss summary::-webkit-details-marker{display:none}
+.sss summary::after{content:"+";font-family:var(--display);font-size:1.6rem;color:var(--tarcin);
+  line-height:1;flex-shrink:0;transition:transform .2s}
+.sss details[open] summary::after{transform:rotate(45deg)}
+.sss details p{color:#54604F;padding-bottom:20px;margin-top:-4px;font-size:.96rem}
+
 /* ---------- alt bilgi ---------- */
 footer{padding-block:38px;font-size:.84rem;color:var(--yaprak)}
 .ust-eylem{display:flex;align-items:center;gap:14px}
@@ -236,6 +274,8 @@ footer a:hover{color:var(--tarcin)}
   .marka img{width:30px;height:30px}
 }
 @media (max-width:860px){
+  .kimler-izgara{grid-template-columns:1fr;gap:30px}
+  .reformer-kutu{position:static}
   nav{display:none}
   .hero-izgara,.hakkinda,.iletisim-kutu{grid-template-columns:1fr}
   .hero{min-height:auto;padding-block:132px 80px}
@@ -248,6 +288,32 @@ footer a:hover{color:var(--tarcin)}
   .nefes circle{scale:.92}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "Pilateria Pilates Studio",
+  "description": "Ankara Çankaya'da reformer ve mat pilates stüdyosu. En fazla 4 kişilik gruplar, bireysel, duet ve hamile pilatesi dersleri.",
+  "url": "https://pilateriapilates.com",
+  "telephone": "+905318960521",
+  "image": "https://pilateriapilates.com/pilateria-logo-full.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Şenel İş Merkezi, Mebusevleri, Ergin Sok. No: 24/4",
+    "postalCode": "06570",
+    "addressLocality": "Çankaya",
+    "addressRegion": "Ankara",
+    "addressCountry": "TR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 39.9308, "longitude": 32.833998 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "10:00", "closes": "21:00"
+  }],
+  "sameAs": ["https://www.instagram.com/pilateriapilates/"]
+}
+</script>
 </head>
 <body>
 
@@ -263,6 +329,7 @@ footer a:hover{color:var(--tarcin)}
     <nav>
       <a href="#hakkimizda">Hakkımızda</a>
       <a href="#hizmetler">Hizmetler</a>
+      <a href="#sss">SSS</a>
       <a href="#egitmenler">Eğitmenler</a>
       <a href="#iletisim">İletişim</a>
     </nav>
@@ -306,6 +373,39 @@ footer a:hover{color:var(--tarcin)}
 </section>
 
 <div class="kap"><div class="cizgi"></div></div>
+
+
+<section id="nasil" class="nasil">
+  <div class="kap">
+    <div class="bolum-basi">
+      <p class="etiket">Nasıl başlarım?</p>
+      <h2>Başlamak <span class="vurgu">üç adım.</span></h2>
+    </div>
+    <div class="adimlar bel">
+      <div class="adim">
+        <div class="no">1</div>
+        <h3>Bize yaz</h3>
+        <p>WhatsApp'tan tek bir mesaj yeter. Sana uygun gün ve saati birlikte belirleyelim.</p>
+      </div>
+      <div class="adim">
+        <div class="no">2</div>
+        <h3>Değerlendirme dersine gel</h3>
+        <p>İlk derste bedenini tanıyoruz: duruşun, hareket geçmişin, varsa ağrıların ve
+        hedeflerin. Bu ders bir test değil; tanışma.</p>
+      </div>
+      <div class="adim">
+        <div class="no">3</div>
+        <h3>Programın oluşsun</h3>
+        <p>Değerlendirmeye göre sana en uygun formatı öneriyoruz — bireysel, duet ya da
+        küçük grup. Sonrası düzenli, sana ait bir rutin.</p>
+      </div>
+    </div>
+    <div class="adim-buton bel">
+      <a class="btn btn-dolu wa-baglanti" href="#">
+        WhatsApp'tan yaz</a>
+    </div>
+  </div>
+</section>
 
 <section id="hakkimizda">
   <div class="kap hakkinda">
@@ -431,6 +531,86 @@ footer a:hover{color:var(--tarcin)}
         <p class="not">Derslere katılım için doktor onayı gereklidir.</p>
         <p class="sure">Gebelik haftasına göre · 45 dakika</p>
       </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="kimler" class="kimler">
+  <div class="kap kimler-izgara">
+    <div>
+      <p class="etiket">Kimler için?</p>
+      <h2>Pilateria <span class="vurgu">kimler için?</span></h2>
+      <div class="kim-liste bel">
+        <div class="kim"><strong>Masa başında çalışıyorsan</strong> — gün boyu oturmanın
+        sıkıştırdığı omuz, boyun ve bel bölgesini açmak, duruşunu yeniden kurmak için.</div>
+        <div class="kim"><strong>Yeni başlıyorsan</strong> — hiç pilates yapmamış olman bir
+        engel değil, başlangıç noktası. Değerlendirme dersi tam da bunun için var.</div>
+        <div class="kim"><strong>Bel ve boyun ağrıların varsa</strong> — kontrollü hareket ve
+        doğru teknikle, bedenini zorlamadan güçlenmek için. Mevcut bir rahatsızlığın varsa
+        hekimine danışmanı öneririz.</div>
+        <div class="kim"><strong>Hamileysen ya da yeni doğum yaptıysan</strong> — gebelik
+        haftana göre planlanan derslerle, bedeninin değişimine eşlik etmek için.</div>
+        <div class="kim"><strong>Yıllardır spor yapıyorsan</strong> — esneklik, denge ve derin
+        kas gücünü antrenman rutinine eklemek için.</div>
+        <div class="kim"><strong>Kendine zaman ayırmak istiyorsan</strong> — bazen sebep
+        sadece budur ve yeterlidir.</div>
+      </div>
+    </div>
+    <aside class="reformer-kutu">
+      <p class="etiket">Reformer nedir?</p>
+      <h3>Yaylı dirençle çalışan bir pilates aleti</h3>
+      <p>Yatar pozisyondan ayakta duruşa kadar yüzlerce hareketi destekler; yayların
+      direnci senin seviyene göre ayarlanır. Bu yüzden aynı alet, hem ilk kez başlayan
+      birini güvenle taşır hem de yıllardır çalışan birini zorlayabilir.</p>
+      <p>Mat pilatesten farkı şu: reformer harekete hem destek hem direnç verir. Doğru kas
+      grubunu hissetmen kolaylaşır, eklemlere binen yük azalır. Stüdyomuzda beş reformer
+      var ve dersler en fazla dört kişiyle işlenir — böylece her harekette eğitmenin gözü
+      senin üzerinde olur.</p>
+    </aside>
+  </div>
+</section>
+
+
+<section id="sss" class="sss">
+  <div class="kap">
+    <div class="bolum-basi">
+      <p class="etiket">Merak edilenler</p>
+      <h2>Sıkça sorulan <span class="vurgu">sorular</span></h2>
+    </div>
+    <div class="sss-liste bel">
+      <details>
+        <summary>Hiç pilates yapmadım. Başlayabilir miyim?</summary>
+        <p>Evet — üyelerimizin çoğu ilk kez burada başladı. İlk dersin bir değerlendirme
+        dersi: seviyeni, ihtiyaçlarını ve hedeflerini birlikte belirliyoruz, programın buna
+        göre şekilleniyor. Hazır olman gereken hiçbir şey yok.</p>
+      </details>
+      <details>
+        <summary>Derse gelirken ne getirmeliyim?</summary>
+        <p>Rahat hareket edebileceğin bir spor kıyafeti ve su yeterli. Kaymaz pilates
+        çorabı öneririz.</p>
+      </details>
+      <details>
+        <summary>Dersler ne kadar sürüyor, kaç kişiyle yapılıyor?</summary>
+        <p>Dersler 45 dakika. Bireysel, duet (iki kişi) ve en fazla dört kişilik grup
+        formatlarımız var. Beş reformerlı stüdyomuzda herkes kendi aletinde çalışır.</p>
+      </details>
+      <details>
+        <summary>Ne sıklıkla gelmeliyim? Ne zaman sonuç görürüm?</summary>
+        <p>Haftada 2-3 ders ideal bir başlangıç. Joseph Pilates'in sözü meşhurdur: "10
+        derste farkı hissedersin, 20 derste farkı görürsün, 30 derste yeni bir bedenin
+        olur." Herkesin temposu farklı; biz senin temponla ilerleriz.</p>
+      </details>
+      <details>
+        <summary>Hamileyim. Derslere katılabilir miyim?</summary>
+        <p>Evet — hamile pilatesi derslerimiz gebelik haftana ve ihtiyaçlarına göre
+        planlanır. Katılım için doktor onayı gerekiyor.</p>
+      </details>
+      <details>
+        <summary>Fiyatlar ne kadar?</summary>
+        <p>Paketlerimiz ders formatına ve sıklığa göre değişiyor. Güncel fiyatlar ve sana
+        uygun paket için WhatsApp'tan yaz — aynı gün dönüş yapıyoruz.</p>
+      </details>
     </div>
   </div>
 </section>

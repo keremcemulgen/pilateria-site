@@ -180,12 +180,20 @@ section{padding-block:var(--bolum-y);position:relative}
 .egitmen-giris strong{color:var(--altin);font-weight:600}
 .egitmenler-liste{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(24px,4vw,48px);margin-top:16px}
 .egitmen{padding-top:26px;border-top:2px solid rgba(232,160,116,.45)}
+.egitmen .portre{width:112px;height:112px;border-radius:50%;object-fit:cover;
+  display:block;margin-bottom:20px;border:3px solid var(--altin-acik);
+  box-shadow:0 10px 24px rgba(110,95,64,.16);transition:transform .25s}
+.egitmen:hover .portre{transform:scale(1.04)}
 .monogram{
   width:64px;height:64px;border-radius:50%;background:var(--altin-acik);color:#2F3B2C;
   display:grid;place-items:center;font-family:var(--display);font-weight:500;font-size:1.42rem;letter-spacing:.04em;
   margin-bottom:20px;transition:background .3s ease,color .3s ease;
 }
-.egitmen:hover .monogram{background:var(--kayisi);color:#33291F}
+.egitmen:hover .egitmen .portre{width:112px;height:112px;border-radius:50%;object-fit:cover;
+  display:block;margin-bottom:20px;border:3px solid var(--altin-acik);
+  box-shadow:0 10px 24px rgba(110,95,64,.16);transition:transform .25s}
+.egitmen:hover .portre{transform:scale(1.04)}
+.monogram{background:var(--kayisi);color:#33291F}
 .egitmen h3{margin-bottom:5px}
 .egitmen .rol{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--tarcin);font-weight:600}
 .egitmen p{font-size:.93rem;color:#5D5342}
@@ -686,22 +694,22 @@ footer a:hover{color:var(--tarcin)}
 
     <div class="egitmenler-liste bel">
       <article class="egitmen">
-        <div class="monogram">DÖ</div>
+        <img class="portre" src="egitmen-derya.jpg" alt="Derya Öztepe" width="640" height="640" loading="lazy">
         <h3>Derya Öztepe</h3>
         <p class="rol">Kurucu &amp; Pilates Eğitmeni · TCF Sertifikalı</p>
       </article>
       <article class="egitmen">
-        <div class="monogram">İK</div>
+        <img class="portre" src="egitmen-iclal.jpg" alt="İclal Koç" width="640" height="640" loading="lazy">
         <h3>İclal Koç</h3>
         <p class="rol">Pilates Eğitmeni · TCF Sertifikalı</p>
       </article>
       <article class="egitmen">
-        <div class="monogram">EK</div>
+        <img class="portre" src="egitmen-esra.jpg" alt="Esra Karababa" width="640" height="640" loading="lazy">
         <h3>Esra Karababa</h3>
         <p class="rol">Pilates Eğitmeni · TCF Sertifikalı</p>
       </article>
       <article class="egitmen">
-        <div class="monogram">GK</div>
+        <img class="portre" src="egitmen-gizem.jpg" alt="Gizem Kasap" width="640" height="640" loading="lazy">
         <h3>Gizem Kasap</h3>
         <p class="rol">Pilates Eğitmeni · TCF Sertifikalı</p>
       </article>

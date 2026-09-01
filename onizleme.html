@@ -76,11 +76,11 @@ nav a:hover{color:var(--bronz)} nav a:hover::after{width:100%}
 .hero .giris{max-width:44ch;font-size:1.05rem;margin-bottom:32px}
 .hero-butonlar{display:flex;flex-wrap:wrap;gap:13px}
 .kemer{position:relative;justify-self:center;width:min(430px,92%)}
-.kemer .ic{overflow:hidden;border-radius:999px 999px 26px 26px;
+.kemer .ic{overflow:hidden;border-radius:26px;
  box-shadow:0 26px 60px rgba(110,95,64,.22)}
-.kemer video{width:100%;aspect-ratio:720/960;object-fit:cover;display:block}
-.kemer::before{content:"";position:absolute;inset:-16px -16px 12px;border:1.5px solid var(--altin-acik);
- border-radius:999px 999px 26px 26px;pointer-events:none}
+.kemer video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block}
+.kemer::before{content:"";position:absolute;inset:-14px;border:1.5px solid var(--altin-acik);
+ border-radius:32px;pointer-events:none}
 .rozet{position:absolute;left:-14px;bottom:26px;background:var(--fildisi);border:1px solid rgba(156,123,62,.2);
  border-radius:16px;padding:12px 18px;box-shadow:0 14px 30px rgba(110,95,64,.16);text-align:center}
 .rozet b{display:block;font-family:var(--display);font-size:1.7rem;color:var(--bronz);line-height:1}
@@ -104,9 +104,9 @@ nav a:hover{color:var(--bronz)} nav a:hover::after{width:100%}
 
 /* hakkimizda: video + metin */
 .hakkinda{background:var(--fildisi)}
-.hak-izgara{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(30px,5vw,64px);align-items:center}
+.hak-izgara{display:grid;grid-template-columns:.62fr 1.38fr;gap:clamp(30px,5vw,64px);align-items:center}
 .hak-video{overflow:hidden;border-radius:var(--yuvarlak);box-shadow:0 22px 48px rgba(110,95,64,.18)}
-.hak-video video{width:100%;aspect-ratio:800/600;object-fit:cover;display:block}
+.hak-video video{width:100%;aspect-ratio:9/16;object-fit:cover;display:block;max-height:70svh;margin-inline:auto}
 .hakkinda p+p{margin-top:15px}
 
 /* hizmet kartlari */
@@ -283,7 +283,7 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
   </div>
  </div>
  <div class="kemer">
-  <div class="ic"><video src="hero3.mp4" autoplay muted loop playsinline preload="metadata"
+  <div class="ic"><video src="hero4.mp4" autoplay muted loop playsinline preload="metadata"
    poster="ekip.jpg" aria-label="Pilateria stüdyosunda reformer dersi"></video></div>
   <div class="rozet"><span class="yildiz">★★★★★</span><b>4,9</b><span>93 Google yorumu</span></div>
  </div>
@@ -302,7 +302,7 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
 </div></div>
 
 <section class="hakkinda" id="hakkimizda"><div class="kap hak-izgara">
- <div class="hak-video g"><video src="ders3.mp4" autoplay muted loop playsinline preload="none" poster="m2.jpg"></video></div>
+ <div class="hak-video g"><video src="ders4.mp4" autoplay muted loop playsinline preload="none" poster="m2.jpg"></video></div>
  <div class="g">
   <p class="etiket">Hakkımızda</p>
   <h2 style="margin-block:16px 24px">Hareketin ötesinde,<br><span class="vurgu">sana ait bir alan.</span></h2>

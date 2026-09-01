@@ -147,7 +147,7 @@ nav a:hover{color:var(--bronz)} nav a:hover::after{width:100%}
 .galeri{background:var(--kum)}
 .galeri-izgara{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin-top:44px}
 .galeri figure{margin:0;overflow:hidden;border-radius:var(--yuvarlak)}
-.galeri img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .5s}
+.galeri img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 32%;transition:transform .5s}
 .galeri figure:hover img{transform:scale(1.05)}
 .genis{grid-column:span 2}
 .genis img{aspect-ratio:16/9}
@@ -180,7 +180,7 @@ nav a:hover{color:var(--bronz)} nav a:hover::after{width:100%}
 /* egitmenler */
 .ekip{background:var(--kum)}
 .ekip-foto{border-radius:var(--yuvarlak);overflow:hidden;margin-top:44px;box-shadow:0 22px 48px rgba(110,95,64,.16)}
-.ekip-foto img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.ekip-foto img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 30%}
 .ekip-izgara{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:26px;margin-top:38px}
 .uye{text-align:center}
 .uye .cer{overflow:hidden;border-radius:999px 999px 20px 20px;border:2px solid var(--altin-acik)}
@@ -230,7 +230,7 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
  .reformer{position:static}
  .rakam-band{grid-template-columns:repeat(2,1fr);gap:30px}
  .genis{grid-column:span 1}
- .genis img{aspect-ratio:4/5}
+ .genis img{aspect-ratio:16/10;object-position:center 28%}
 }
 </style>
 <script type="application/ld+json">

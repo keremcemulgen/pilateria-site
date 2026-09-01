@@ -190,10 +190,9 @@ nav a:hover{color:var(--bronz)} nav a:hover::after{width:100%}
 .uye .rol{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--turuncu);font-weight:700}
 
 /* amblem bandi */
-.amblem-band{position:relative;height:52svh;min-height:340px;overflow:hidden;background:var(--krem)}
-.amblem-band video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.amblem-band::after{content:"";position:absolute;inset:0;
- background:linear-gradient(180deg,var(--krem),transparent 28% 72%,var(--krem))}
+.amblem-band{background:var(--krem);padding-block:clamp(30px,5vw,60px);display:grid;place-items:center}
+.amblem-band video{width:min(760px,92%);aspect-ratio:16/9;object-fit:contain;
+ border-radius:var(--yuvarlak);box-shadow:0 20px 44px rgba(110,95,64,.14)}
 
 /* iletisim */
 .iletisim{background:var(--bronz);color:#EFEADF}

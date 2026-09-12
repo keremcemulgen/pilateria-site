@@ -168,17 +168,17 @@ nav a:hover{color:var(--bronz)} nav a:hover::after{width:100%}
 /* galeri */
 .galeri{background:var(--kum)}
 .galeri figure{margin:0;overflow:hidden;border-radius:var(--yuvarlak)}
-.galeri img{width:100%;aspect-ratio:4/5;object-fit:contain;background:var(--fildisi);transition:transform .5s}
+.galeri figure:not(.foto-akis figure) img{width:100%;transition:transform .5s}
 .galeri figure:hover img{transform:scale(1.05)}
 
 /* kayan fotograf seridi */
 .foto-serit{margin-top:44px;overflow:hidden;
  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
-.foto-akis{display:flex;gap:18px;width:max-content;animation:fotokay 110s linear infinite}
+.foto-akis{display:flex;gap:18px;width:max-content;animation:fotokay 95s linear infinite}
 .foto-akis figure{margin:0;flex:none;width:clamp(200px,22vw,290px)}
-.foto-akis img{width:100%;height:auto;display:block;border-radius:18px;
- box-shadow:0 14px 32px rgba(110,95,64,.16)}
+.foto-akis img{width:100%;height:auto;display:block;aspect-ratio:auto;object-fit:fill;
+ background:none;border-radius:18px;box-shadow:0 14px 32px rgba(110,95,64,.16)}
 @keyframes fotokay{from{transform:translateX(calc(-50% - 9px))}to{transform:translateX(0)}}
 .foto-serit:hover .foto-akis{animation-play-state:paused}
 @media (prefers-reduced-motion:reduce){.foto-akis{animation:none}}
@@ -455,7 +455,7 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
  <h2 style="margin-top:16px">Kendini rahat<br><span class="vurgu">hissedeceğin bir yer.</span></h2></div>
  <div class="foto-serit">
   <div class="foto-akis">
-   <figure><img src="ders1.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders2.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders3.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders4.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders5.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders6.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders7.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders8.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders9.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders10.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders11.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders12.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders13.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders14.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders1.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders2.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders3.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders4.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders5.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders6.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders7.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders8.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders9.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders10.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders11.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders12.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders13.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="ders14.jpg" alt="Pilateria grup dersi" loading="lazy"></figure>
+   <figure><img src="k1.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k2.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k3.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k4.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k5.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k6.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k7.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k8.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k9.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k10.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k11.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k12.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k1.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k2.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k3.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k4.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k5.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k6.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k7.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k8.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k9.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k10.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k11.jpg" alt="Pilateria grup dersi" loading="lazy"></figure><figure><img src="k12.jpg" alt="Pilateria grup dersi" loading="lazy"></figure>
   </div>
  </div>
 </div></section>

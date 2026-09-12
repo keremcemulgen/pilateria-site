@@ -84,7 +84,10 @@ nav a:hover{color:var(--bronz)} nav a:hover::after{width:100%}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;
  background:radial-gradient(ellipse 70% 55% at 78% 42%,rgba(232,160,116,.16),transparent 70%)}
 .hero-izgara{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(30px,5vw,70px);align-items:center}
-.hero h1{font-size:clamp(3rem,6.9vw,5.3rem);margin-block:20px 22px}
+.hero h1{font-size:clamp(2.4rem,5.2vw,4.1rem);margin-block:16px 20px;max-width:16ch}
+.hero-soz{font-family:var(--display);font-size:clamp(1.25rem,2.3vw,1.72rem);line-height:1.35;
+ color:var(--bronz);max-width:30ch;margin-bottom:20px;padding-left:18px;
+ border-left:3px solid var(--kayisi)}
 .hero .giris{max-width:44ch;font-size:1.05rem;margin-bottom:32px}
 .hero-butonlar{display:flex;flex-wrap:wrap;gap:13px}
 .kemer{position:relative;justify-self:center;width:min(430px,92%)}
@@ -321,10 +324,12 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
 
 <section class="hero" id="tepe"><div class="kap hero-izgara">
  <div>
-  <p class="etiket">Reformer &amp; Mat Pilates Stüdyosu</p>
-  <h1>Nefesle başlar,<br><span class="vurgu">dengeyle</span> devam eder.</h1>
-  <p class="giris">Ankara Çankaya'da, beş reformerlı stüdyomuzda en fazla dört kişilik gruplarla
-  çalışıyoruz; böylece her derste eğitmen senin bedenini görüyor.</p>
+  <p class="etiket">Pilateria'da</p>
+  <h1>sadece Pilates yapmıyoruz.<br><span class="vurgu">Disiplin ve devamlılık</span> kazandırıyoruz.</h1>
+  <p class="hero-soz">Gerçek değişim, motivasyonla değil;<br>kendine verdiğin sözü tutmakla başlar.</p>
+  <p class="giris">Ankara Çankaya'da, en fazla 4 kişilik gruplarla ve kişisel takiple çalışıyoruz.
+  Her derste bedenini doğru hareket ettirmeyi öğrenirken, kendin için ayırdığın zamanı
+  sürdürülebilir bir alışkanlığa dönüştürüyorsun.</p>
   <div class="hero-butonlar">
    <a class="btn btn-dolu wa-baglanti" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23z"/></svg> WhatsApp'tan randevu al</a>
    <a class="btn btn-cizgi" href="#hizmetler">Hizmetleri gör</a>

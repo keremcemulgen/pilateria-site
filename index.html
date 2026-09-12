@@ -158,7 +158,12 @@ nav a:hover{color:var(--bronz)} nav a:hover::after{width:100%}
 .kim-liste{display:grid;gap:12px;margin-top:30px}
 .kim{background:var(--krem);border-left:3px solid var(--kayisi);border-radius:0 14px 14px 0;
  padding:16px 19px;font-size:.95rem}
-.kim strong{color:var(--bronz)}
+.kim-ustbaslik{font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.75rem);
+ color:var(--turuncu);margin-top:18px}
+.kim strong{display:block;color:var(--bronz);margin-bottom:5px;font-size:1rem}
+.kim span{display:block;color:var(--metin);font-size:.93rem}
+.kim-not{margin-top:22px;padding:16px 18px;border-radius:14px;background:rgba(232,160,116,.14);
+ border-left:3px solid var(--kayisi);font-size:.9rem;color:var(--altin);max-width:62ch}
 .reformer{background:var(--bronz);color:#EFEADF;border-radius:var(--yuvarlak);padding:32px 30px;position:sticky;top:94px}
 .reformer .etiket{color:var(--kayisi)}
 .reformer h3{color:#FFF6EC;margin-block:12px;font-size:1.55rem}
@@ -409,19 +414,19 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
  <div class="g">
   <p class="etiket">Kimler için?</p>
   <h2 style="margin-top:16px">Pilateria <span class="vurgu">kimler için?</span></h2>
+  <p class="kim-ustbaslik">Bedenine yatırım yapmak isteyenler için.</p>
   <div class="kim-liste">
-   <div class="kim"><strong>Masa başında çalışıyorsan</strong> — gün boyu oturmanın sıkıştırdığı
-   omuz, boyun ve bel bölgesini açmak, duruşunu yeniden kurmak için.</div>
-   <div class="kim"><strong>Yeni başlıyorsan</strong> — hiç pilates yapmamış olman bir engel değil,
-   başlangıç noktası. Değerlendirme dersi tam da bunun için var.</div>
-   <div class="kim"><strong>Bel ve boyun ağrıların varsa</strong> — kontrollü hareket ve doğru
-   teknikle, bedenini zorlamadan güçlenmek için. Mevcut bir rahatsızlığın varsa hekimine danışmanı öneririz.</div>
-   <div class="kim"><strong>Hamileysen ya da yeni doğum yaptıysan</strong> — gebelik haftana göre
-   planlanan derslerle, bedeninin değişimine eşlik etmek için.</div>
-   <div class="kim"><strong>Yıllardır spor yapıyorsan</strong> — esneklik, denge ve derin kas gücünü
-   antrenman rutinine eklemek için.</div>
-   <div class="kim"><strong>Kendine zaman ayırmak istiyorsan</strong> — bazen sebep sadece budur ve yeterlidir.</div>
+   <div class="kim"><strong>Masa başında çalışıyorsan</strong><span>Uzun süre oturmanın getirdiği hareketsizliği dengelemek, duruşunu desteklemek ve bedenini gün içinde daha aktif kullanmak için.</span></div>
+   <div class="kim"><strong>Gün boyu ayakta çalışıyorsan</strong><span>Uzun süre ayakta kalmanın getirdiği yükü dengelemek, gücünü, hareket kapasiteni ve beden kontrolünü geliştirmek için.</span></div>
+   <div class="kim"><strong>Pilates'e yeni başlıyorsan</strong><span>Daha önce hiç Pilates yapmamış olman bir engel değil. Başlangıç seviyenden yola çıkarak hareketleri doğru teknikle öğrenir ve kendi hızında ilerlersin.</span></div>
+   <div class="kim"><strong>Düzenli spor yapıyorsan</strong><span>Antrenman rutinine farklı bir egzersiz eklemekten öte; hareket kaliteni, kontrolünü, mobiliteni ve beden farkındalığını geliştirmek için.</span></div>
+   <div class="kim"><strong>Hamileysen veya yeni doğum yaptıysan</strong><span>Bedenindeki değişimlere uyum sağlayan, dönemine ve ihtiyaçlarına göre planlanan kontrollü çalışmalarla hareket etmeye devam etmek için. Bu dönemde ders planlaması, doktorunun uygunluğu doğrultusunda yapılır.</span></div>
+   <div class="kim"><strong>Kendine düzenli zaman ayırmak istiyorsan</strong><span>Kendin için ayırdığın zamanı geçici bir motivasyon olmaktan çıkarıp, hayatının sürdürülebilir bir parçası hâline getirmek için.</span></div>
+   <div class="kim"><strong>Hareket ederken sosyalleşmek istiyorsan</strong><span>En fazla dört kişilik küçük grupların samimi atmosferinde birlikte hareket etmek, birbirinizi motive etmek ve Pilates'i keyifli bir rutine dönüştürmek için.</span></div>
   </div>
+  <p class="kim-not">Özel bir fiziksel durumun veya devam eden bir rahatsızlığın varsa, derse
+  başlamadan önce bizimle paylaşmanı rica ediyoruz. Gerektiğinde hekiminin görüşü doğrultusunda
+  ilerliyoruz.</p>
  </div>
  <aside class="reformer g">
   <p class="etiket">Reformer nedir?</p>

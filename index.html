@@ -34,7 +34,7 @@
  --olcu:1220px; --yuvarlak:22px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{background:var(--krem);color:var(--metin);font-family:var(--govde);
  font-size:clamp(16px,1.04vw,17.5px);line-height:1.72;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img,video{display:block;max-width:100%}
@@ -281,7 +281,13 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
 .wa-sabit svg{width:27px;height:27px}
 
 @media (max-width:900px){
- nav{display:none}
+ nav:not(.mobil-menu){display:none}
+ .menu-dugme{display:flex}
+ .mobil-menu{display:flex}
+ header{padding-block:10px}
+ .ustbar .btn{padding:10px 18px;font-size:.86rem}
+ .marka b{font-size:.98rem}
+ .marka img{width:30px}
  .hero-izgara,.hak-izgara,.kimler-izgara,.il-izgara{grid-template-columns:1fr}
  .hero{min-height:auto;padding-block:120px 60px}
  .kemer{order:-1;width:min(340px,84%)}
@@ -336,7 +342,22 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
   <a href="#kurucu">Kurucumuz</a><a href="#egitmenler">Eğitmenler</a><a href="#iletisim">İletişim</a>
  </nav>
  <a class="btn btn-dolu wa-baglanti" href="#" style="padding:12px 24px">Randevu al</a>
-</div></header>
+ <button class="menu-dugme" id="menu-dugme" type="button" aria-label="Menü" aria-expanded="false">
+  <span></span><span></span><span></span>
+ </button>
+</div>
+<nav class="mobil-menu" id="mobil-menu" aria-hidden="true">
+ <a href="#hizmetler">Hizmetler</a>
+ <a href="#kimler">Kimler için?</a>
+ <a href="#hakkimizda">Hakkımızda</a>
+ <a href="#kurucu">Kurucumuz</a>
+ <a href="#egitmenler">Eğitmenler</a>
+ <a href="#sss">Sıkça sorulanlar</a>
+ <a href="#belge">TCF belgesi</a>
+ <a href="#iletisim">İletişim</a>
+ <a class="mobil-wa wa-baglanti" href="#">WhatsApp'tan randevu al</a>
+</nav>
+</header>
 
 <section class="hero" id="tepe"><div class="kap hero-izgara">
  <div>
@@ -412,7 +433,7 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
    <div class="sure">Hamilelik sürecine özel · 45 dakika</div></article>
  </div>
 </div></section>
-<section class="kimler"><div class="kap kimler-izgara">
+<section class="kimler" id="kimler"><div class="kap kimler-izgara">
  <div class="g">
   <p class="etiket">Kimler için?</p>
   <h2 style="margin-top:16px">Pilateria <span class="vurgu">kimler için?</span></h2>
@@ -793,6 +814,20 @@ const PILATERIA = {
         });
       },{threshold:0.5}).observe(v);
     }
+  })();
+  (function(){
+    var d=document.getElementById("menu-dugme"), m=document.getElementById("mobil-menu");
+    if(!d||!m) return;
+    function kapat(){ m.classList.remove("acik"); d.classList.remove("acik");
+      d.setAttribute("aria-expanded","false"); m.setAttribute("aria-hidden","true"); }
+    d.addEventListener("click", function(){
+      var acik=m.classList.toggle("acik");
+      d.classList.toggle("acik", acik);
+      d.setAttribute("aria-expanded", acik?"true":"false");
+      m.setAttribute("aria-hidden", acik?"false":"true");
+    });
+    m.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", kapat); });
+    addEventListener("resize", function(){ if(innerWidth>900) kapat(); });
   })();
   const ust = document.getElementById("ustbar");
   addEventListener("scroll", function(){ ust.classList.toggle("kaydi", scrollY > 40); }, {passive:true});

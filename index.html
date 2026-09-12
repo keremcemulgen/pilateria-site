@@ -267,6 +267,13 @@ footer a{text-decoration:none} footer a:hover{color:var(--turuncu)}
   "sameAs": ["https://www.instagram.com/pilateriapilates/"]
 }
 </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17390513094"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17390513094');
+</script>
 </head><body>
 
 <header id="ustbar"><div class="kap ustbar">
@@ -559,6 +566,17 @@ const PILATERIA = {
     PILATERIA.saatler.map(function(s){return s.replace(/[<>&]/g,"");}).join("<br>");
   document.getElementById("yil").textContent = new Date().getFullYear();
   document.getElementById("harita").src = PILATERIA.haritaSrc;
+  document.querySelectorAll(".wa-baglanti").forEach(function(a){
+    a.addEventListener("click", function(){
+      if (typeof gtag === "function") {
+        gtag("event", "conversion", {
+          send_to: "AW-17390513094",
+          value: 1.0,
+          currency: "TRY"
+        });
+      }
+    });
+  });
   const ust = document.getElementById("ustbar");
   addEventListener("scroll", function(){ ust.classList.toggle("kaydi", scrollY > 40); }, {passive:true});
 })();
